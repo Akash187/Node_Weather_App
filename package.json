@@ -1,0 +1,25 @@
+{
+  "name": "node_weather_app",
+  "version": "1.0.0",
+  "description": "A node.js app to fetch data from api and show them.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akash187/Node_Weather_App.git"
+  },
+  "keywords": [
+    "Weather_App"
+  ],
+  "author": "Akash Kumar Seth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Akash187/Node_Weather_App/issues"
+  },
+  "homepage": "https://github.com/Akash187/Node_Weather_App#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
