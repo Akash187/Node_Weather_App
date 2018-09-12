@@ -15,4 +15,10 @@ const argv = yargs
 
 let address = argv.a;
 
-geocode.geocodeAddress(address);
+geocode.geocodeAddress(address, (errorMessage, results) => {
+  if(errorMessage){
+    console.log(errorMessage);
+  }else {
+    console.log(JSON.stringify(results, undefined, 2));
+  }
+});
