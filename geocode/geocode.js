@@ -1,11 +1,11 @@
 const request = require('request');
 const fs = require('fs');
 
-const key = JSON.parse(fs.readFileSync('./keys.json')).mapQuestKey;
+const mapQuestkey = JSON.parse(fs.readFileSync('./keys.json')).mapQuestKey;
 
 let geocodeAddress = (address, callback) => {
   request({
-    url: `http://www.mapquestapi.com/geocoding/v1/address?key=${key}&location=${encodeURIComponent(address)}`,
+    url: `http://www.mapquestapi.com/geocoding/v1/address?key=${mapQuestkey}&location=${encodeURIComponent(address)}`,
     json: true
   }, (error, response, body) => {
     if (error) {
